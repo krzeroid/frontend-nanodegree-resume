@@ -156,4 +156,12 @@ for (edu in education.schools) {
     $(".education-entry:last").append(formattedSchoolDates);
 };
 
+function inName(name) {
+    name = name.trim().split(" ");//trim removes white space from front and back of string, split seperates first and last name into an array by calling on the space in the middle
+    console.log(name);
+    name[1] = name[1].toUpperCase();//name 1 changes last name to uppercase
+    name[0] = name[0].slice(0,1).toUpperCase() + //slice takes two parameters from the first name and creates a substring using 0,1 (first letter) and converts to uppercase, without two parameters (0,1) it'll go to the end of the string (the whole name)
+        name[0].slice(1).toLowerCase();//this appends position one of the two parameters (first letter) into lower case
 
+    return name[0] +" "+name[1]; //appends both values and returns to a string (whole name)
+};

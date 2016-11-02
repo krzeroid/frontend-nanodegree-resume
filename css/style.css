@@ -9,29 +9,15 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
   padding:0;
   margin:0;
   font-family: "Roboto", sans-serif;
 }
 
-#topContacts {
-  margin-top: 10px;
-  float: right;
-}
-
-.clear-fix {
-  overflow: auto;
-}
-
-.education-entry,
-.work-entry,
-.project-entry {
-  padding: 0 5%;
-}
-
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #FFFF9D;
   line-height: 48px;
   display: inline;
 }
@@ -66,6 +52,119 @@ h5 {
 
 }
 
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+}
+
+a {
+  color: #005085;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  padding: 10px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+span {
+  padding: 5px;
+  color: #005085;
+}
+
+#header {
+  background-color: #0081D5;
+}
+
+#topContacts {
+  margin-top: 10px;
+  float: right;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.orange-text {
+  color: #005085;
+}
+
+.white-text {
+  font-weight: 300;
+  color: #fff;
+  margin-right: 8px;
+}
+
+#name {
+  color: #FFFF9D;
+  margin-left: 10px;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  display: none;
+  border-radius: 20px;
+}
+
+.welcome-message {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  margin-left: 17px;
+}
+
+#skills-h3 {
+  color: #FFFF9D;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+#education {
+  margin-bottom: 150px;
+}
+
+.education-entry {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.education-entry a {
+  margin-top: 25px;
+}
 
 .date-text {
   font-style: italic;
@@ -81,45 +180,10 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
-}
-
-p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
-}
-
-a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
-}
-
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
-}
-
-#skills-h3 {
-  color: #f5ae23;
-  display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
-}
-
-.orange-text {
-  color: #f5ae23;
-}
-
-.white-text {
-  font-weight: bold;
-  color: #fff;
+  background-color: #FFFF9D;
 }
 
 .gray {
@@ -132,55 +196,13 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
-}
-
-.flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
-}
-
 .center-content {
   padding: 2.5% 5%;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
-  border-radius: 20px;
-}
-
-img {
-  padding: 10px;
-  width: 500px;
-  border-radius: 20px;
-}
-
-span {
-  padding: 5px;
-}
-
 #lets-connect {
   text-align: center;
+  background-color: #0081D5;
 }
 
 /* Media queries to handle various device widths */
@@ -207,18 +229,6 @@ span {
   .welcome-message {
     display: none;
   }
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {
